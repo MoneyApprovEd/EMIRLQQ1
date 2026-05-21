@@ -6,367 +6,300 @@
     <title>EMIRNETWORK // Cyber Intelligence Ecosystem</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --bg: #05070f;
-            --surface: #0b0f19;
-            --surface-hover: #111827;
-            --border: #1e293b;
+            --bg: #03050a;
+            --surface: #090d16;
+            --border: #131c2e;
             --cyan: #00fbff;
-            --cyan-glow: rgba(0, 251, 255, 0.2);
             --green: #00ff88;
-            --green-glow: rgba(0, 255, 136, 0.15);
             --red: #ff3e3e;
             --gold: #f59e0b;
-            --text: #f1f5f9;
-            --text-muted: #64748b;
+            --text: #e2e8f0;
+            --text-muted: #475569;
         }
 
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            font-family: 'JetBrains Mono', monospace;
         }
 
         body {
             background-color: var(--bg);
             color: var(--text);
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            padding: 60px 20px;
+            padding: 40px 20px;
             display: flex;
             justify-content: center;
-            background-image: 
-                radial-gradient(circle at 10% 20%, rgba(0, 251, 255, 0.03) 0%, transparent 40%),
-                radial-gradient(circle at 90% 80%, rgba(0, 255, 136, 0.02) 0%, transparent 40%);
-        }
-
-        /* Giriş Animasyonu */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(15px); }
-            to { opacity: 1; transform: translateY(0); }
+            background-image: linear-gradient(to bottom, rgba(0, 251, 255, 0.01) 1px, transparent 1px),
+                              linear-gradient(to right, rgba(0, 251, 255, 0.01) 1px, transparent 1px);
+            background-size: 40px 40px;
         }
 
         .dashboard {
-            max-width: 1000px;
+            max-width: 950px;
             width: 100%;
             background: var(--surface);
             border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 50px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 251, 255, 0.02);
-            animation: fadeIn 0.8s ease-out;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
         }
 
-        /* Header Tasarımı */
         header {
             text-align: center;
-            margin-bottom: 40px;
-            position: relative;
+            margin-bottom: 35px;
         }
 
         .top-badges {
             display: flex;
             justify-content: center;
-            gap: 10px;
-            margin-bottom: 25px;
-        }
-
-        .top-badges img {
-            height: 22px;
-            border-radius: 4px;
+            gap: 8px;
+            margin-bottom: 20px;
         }
 
         h1 {
-            font-family: 'Fira Code', monospace;
-            font-size: 2rem;
+            font-size: 1.6rem;
             font-weight: 700;
-            letter-spacing: -1px;
-            margin-bottom: 12px;
-            background: linear-gradient(135deg, #fff 30%, var(--cyan) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
+            letter-spacing: -0.5px;
+            color: #fff;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
         }
 
         .subtitle {
-            color: var(--text-muted);
-            font-size: 1.1rem;
-            font-weight: 400;
-            max-width: 600px;
-            margin: 0 auto 30px auto;
+            color: #64748b;
+            font-size: 0.9rem;
+            max-width: 650px;
+            margin: 0 auto;
         }
 
-        /* Canlı Status Paneli */
         .status-bar {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: 15px;
-            background: rgba(0,0,0,0.2);
-            padding: 15px;
-            border-radius: 12px;
-            border: 1px solid rgba(255,255,255,0.02);
-            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.02);
+            margin-bottom: 35px;
+            flex-wrap: wrap;
         }
 
         .status-item {
             display: flex;
-            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            padding: 10px;
+            gap: 8px;
+            font-size: 0.8rem;
         }
 
-        .status-item span:first-child {
-            font-size: 0.75rem;
-            text-transform: uppercase;
+        .status-item .label {
             color: var(--text-muted);
-            letter-spacing: 1px;
-            margin-bottom: 5px;
         }
 
-        .status-item img {
-            height: 24px;
-        }
-
-        /* Navigasyon Linkleri */
         nav {
             display: flex;
             justify-content: center;
-            gap: 25px;
+            gap: 20px;
             border-bottom: 1px solid var(--border);
-            padding-bottom: 20px;
-            margin-bottom: 40px;
+            padding-bottom: 15px;
+            margin-bottom: 35px;
         }
 
         nav a {
-            color: var(--text-muted);
+            color: #64748b;
             text-decoration: none;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             font-weight: 500;
-            font-family: 'Fira Code', monospace;
             transition: all 0.2s;
         }
 
         nav a:hover {
             color: var(--cyan);
-            text-shadow: 0 0 10px var(--cyan-glow);
         }
 
-        /* Bölüm Başlıkları */
         h2 {
-            font-family: 'Fira Code', monospace;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             color: #fff;
-            margin-top: 45px;
-            margin-bottom: 20px;
+            margin-top: 40px;
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
-            gap: 10px;
-        }
-
-        h2::before {
-            content: "//";
-            color: var(--cyan);
-            font-weight: 700;
+            gap: 8px;
+            border-left: 3px solid var(--cyan);
+            padding-left: 10px;
         }
 
         p {
-            color: #cbd5e1;
-            margin-bottom: 20px;
-            font-size: 0.98rem;
+            color: #94a3b8;
+            font-size: 0.88rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
         }
 
-        /* İndirme Butonu */
         .download-zone {
             text-align: center;
-            background: radial-gradient(circle at center, rgba(0, 251, 255, 0.05) 0%, transparent 70%);
-            padding: 40px 20px;
-            border-radius: 12px;
-            border: 1px dashed rgba(0, 251, 255, 0.2);
-            margin: 30px 0;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 30px 20px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            margin: 25px 0;
         }
 
         .download-btn {
             display: inline-block;
-            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s;
-            cursor: pointer;
+            transition: transform 0.2s;
         }
 
         .download-btn:hover {
-            transform: scale(1.05);
-            filter: drop-shadow(0 0 15px var(--cyan-glow));
+            transform: translateY(-2px);
         }
 
-        /* Tablo Tasarımı */
         .table-wrapper {
             overflow-x: auto;
-            border-radius: 8px;
             border: 1px solid var(--border);
+            border-radius: 6px;
             margin: 20px 0;
-            background: rgba(0,0,0,0.1);
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
             text-align: left;
-            font-size: 0.92rem;
+            font-size: 0.82rem;
         }
 
         th {
-            background-color: rgba(15, 23, 42, 0.6);
+            background-color: rgba(19, 28, 46, 0.4);
             color: var(--cyan);
-            font-family: 'Fira Code', monospace;
             font-weight: 500;
-            padding: 14px 16px;
+            padding: 12px 14px;
             border-bottom: 1px solid var(--border);
         }
 
         td {
-            padding: 14px 16px;
-            border-bottom: 1px solid rgba(30, 41, 59, 0.5);
-            color: #e2e8f0;
+            padding: 12px 14px;
+            border-bottom: 1px solid rgba(19, 28, 46, 0.3);
+            color: #cbd5e1;
         }
 
         tr:last-child td {
             border-bottom: none;
         }
 
-        tr:hover td {
-            background-color: rgba(255,255,255,0.01);
-        }
-
-        /* Kritik Uyarı Kutusu */
         .alert-box {
-            background: linear-gradient(90deg, rgba(255, 62, 62, 0.1) 0%, rgba(0,0,0,0) 100%);
+            background: rgba(255, 62, 62, 0.05);
+            border: 1px solid rgba(255, 62, 62, 0.2);
             border-left: 4px solid var(--red);
-            padding: 18px;
-            border-radius: 0 8px 8px 0;
+            padding: 14px;
+            border-radius: 4px;
             margin: 25px 0;
-            font-size: 0.92rem;
+            font-size: 0.82rem;
         }
 
-        /* Modül Grid Kartları */
         .modules-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 16px;
+            gap: 12px;
             margin: 25px 0;
         }
 
         .module-card {
-            background: rgba(15, 23, 42, 0.4);
+            background: rgba(0, 0, 0, 0.15);
             border: 1px solid var(--border);
-            border-radius: 10px;
-            padding: 20px;
-            transition: all 0.3s ease;
+            border-radius: 6px;
+            padding: 16px;
+            transition: all 0.2s ease;
         }
 
         .module-card:hover {
-            border-color: rgba(0, 251, 255, 0.3);
-            background: var(--surface-hover);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            border-color: rgba(0, 251, 255, 0.2);
+            background: rgba(19, 28, 46, 0.2);
         }
 
         .module-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .module-id {
-            font-family: 'Fira Code', monospace;
-            color: var(--cyan);
-            font-size: 0.85rem;
-            background: rgba(0, 251, 255, 0.08);
-            padding: 2px 8px;
-            border-radius: 4px;
-        }
-
-        .module-name {
-            font-weight: 600;
-            color: #fff;
-            font-size: 1.05rem;
-        }
-
-        .module-desc {
-            font-size: 0.88rem;
-            color: #94a3b8;
             margin-bottom: 8px;
         }
 
-        .module-cap {
-            font-family: 'Fira Code', monospace;
+        .module-id {
+            color: var(--cyan);
+            font-size: 0.75rem;
+            background: rgba(0, 251, 255, 0.05);
+            padding: 1px 6px;
+            border-radius: 3px;
+        }
+
+        .module-name {
+            font-weight: 700;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        .module-desc {
             font-size: 0.8rem;
+            color: #64748b;
+            margin-bottom: 6px;
+        }
+
+        .module-cap {
+            font-size: 0.75rem;
             color: var(--green);
         }
 
-        /* Liste Elemanları (Architecture & Roadmap) */
         .spec-list {
             list-style: none;
-            margin: 20px 0;
+            margin: 15px 0;
         }
 
         .spec-list li {
             position: relative;
-            padding-left: 28px;
-            margin-bottom: 12px;
-            color: #cbd5e1;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            font-size: 0.85rem;
+            color: #94a3b8;
         }
 
         .spec-list li::before {
-            content: "➔";
+            content: ">";
             position: absolute;
             left: 0;
             color: var(--cyan);
-            font-size: 0.9rem;
         }
 
         .roadmap-list li.done::before {
-            content: "✓";
+            content: "[x]";
             color: var(--green);
-            font-weight: bold;
         }
         
         .roadmap-list li.todo::before {
-            content: "□";
+            content: "[ ]";
             color: var(--text-muted);
         }
 
-        /* Footer Kısmı */
         footer {
-            margin-top: 60px;
-            padding-top: 30px;
+            margin-top: 50px;
+            padding-top: 25px;
             border-top: 1px solid var(--border);
             text-align: center;
         }
 
         .footer-name {
-            font-family: 'Fira Code', monospace;
-            font-size: 1.1rem;
-            font-weight: 600;
+            font-size: 0.9rem;
+            font-weight: 700;
             color: #fff;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
         }
 
         .footer-meta {
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             color: var(--text-muted);
-            font-style: italic;
             margin-top: 4px;
-        }
-
-        .footer-badge {
-            margin-top: 15px;
-            height: 28px;
         }
     </style>
 </head>
@@ -376,9 +309,9 @@
 
     <header>
         <div class="top-badges">
-            <img src="https://img.shields.io/badge/VERIFIED_DEVELOPER-EMIRLQQ1-00fbff?style=flat-square&logo=github&logoColor=white" alt="Verified">
-            <img src="https://img.shields.io/badge/OFFICIAL_PRODUCT-EMIRNETWORK-00ff88?style=flat-square&logo=checkmarx&logoColor=white" alt="Official">
-            <img src="https://img.shields.io/badge/SECURITY_AUDIT-PASSED-gold?style=flat-square&logo=guardant&logoColor=white" alt="Audit">
+            <img src="https://img.shields.io/badge/VERIFIED-EMIRLQQ1-00fbff?style=flat-square" alt="Verified">
+            <img src="https://img.shields.io/badge/PRODUCT-EMIRNETWORK-00ff88?style=flat-square" alt="Official">
+            <img src="https://img.shields.io/badge/AUDIT-PASSED-gold?style=flat-square" alt="Audit">
         </div>
         <h1>EMIRNETWORK // DEVELOPMENT TOOLKIT</h1>
         <p class="subtitle">Advanced Windows-Based Network Intelligence & Cyber Forensic Ecosystem</p>
@@ -386,35 +319,34 @@
 
     <div class="status-bar">
         <div class="status-item">
-            <span>System Status</span>
-            <img src="https://img.shields.io/badge/STATUS-OPERATIONAL-00fbff?style=flat-square" alt="Status">
+            <span class="label">STATUS:</span>
+            <span style="color: var(--cyan); font-weight: bold;">OPERATIONAL</span>
         </div>
         <div class="status-item">
-            <span>Security Verdict</span>
-            <img src="https://img.shields.io/badge/SECURITY-FALSE_POSITIVE-00ff88?style=flat-square" alt="Security">
+            <span class="label">SECURITY:</span>
+            <span style="color: var(--green); font-weight: bold;">FALSE_POSITIVE_VERIFIED</span>
         </div>
         <div class="status-item">
-            <span>Build Version</span>
-            <img src="https://img.shields.io/badge/VERSION-1.0.0_STABLE-gold?style=flat-square" alt="Version">
+            <span class="label">VERSION:</span>
+            <span style="color: var(--gold); font-weight: bold;">1.0.0_STABLE</span>
         </div>
     </div>
 
     <nav>
-        <a href="#summary">SUMMARY</a>
-        <a href="#deployment">DEPLOYMENT</a>
-        <a href="#modules">CORE MODULES</a>
-        <a href="#architecture">ARCHITECTURE</a>
-        <a href="#roadmap">ROADMAP</a>
+        <a href="#summary">// SUMMARY</a>
+        <a href="#deployment">// DEPLOYMENT</a>
+        <a href="#modules">// MODULES</a>
+        <a href="#architecture">// ARCHITECTURE</a>
     </nav>
 
     <section id="summary">
         <h2>Executive Summary</h2>
-        <p><strong>EmirNetwork</strong>, siber güvenlik profesyonelleri ve ağ yöneticileri için geliştirilmiş, yüksek performanslı bir ağ analizi ve istihbarat toplama (OSINT) ekosistemidir. Windows mimarisi üzerine inşa edilen bu "Sovereign" yapı, <strong>True RGB Rainbow Engine</strong> ile terminal tabanlı veri görselleştirmesinde yeni bir standart belirler. Yazılım, ağ trafiğini analiz etmekten sistem kaynaklarını milisaniye hassasiyetinde izlemeye kadar geniş bir yelpazede operasyonel üstünlük sağlar.</p>
+        <p>EmirNetwork, siber güvenlik profesyonelleri ve ağ yöneticileri için geliştirilmiş, yüksek performanslı bir ağ analizi ve istihbarat toplama (OSINT) ekosistemidir. Windows mimarisi üzerine inşa edilen bu Sovereign yapı, True RGB Rainbow Engine ile terminal tabanlı veri görselleştirmesinde yeni bir standart belirler. Yazılım, ağ trafiğini analiz etmekten sistem kaynaklarını milisaniye hassasiyetinde izlemeye kadar geniş bir yelpazede operasyonel üstünlük sağlar.</p>
     </section>
 
     <section id="deployment">
         <h2>Deployment & Security Protocol</h2>
-        <p>Optimize edilmiş, tek tıkla çalışan (portable) x64 mimarisine sahip yürütülebilir dosyaya aşağıdaki güvenli kanaldan erişebilirsiniz:</p>
+        <p>Optimize edilmiş, tek tıkla çalışan (portable) x64 mimarisine sahip yürütülebilir dosyaya aşağıdaki resmi kanaldan erişebilirsiniz:</p>
         
         <div class="download-zone">
             <a href="https://github.com/MoneyApprovEd/em-rnetwork-em-rlqq1/releases/tag/v1.0.0" class="download-btn">
@@ -422,7 +354,7 @@
             </a>
         </div>
 
-        <p style="margin-top: 30px;">Ağ diagnostik araçları, doğaları gereği düşük seviyeli ağ soketlerine (Raw Sockets) erişim sağlar. Bu durum, bazı modern antivirüs motorlarının sezgisel analizlerinde tetiklenmelere yol açabilir.</p>
+        <p>Ağ diagnostik araçları, doğaları gereği düşük seviyeli ağ soketlerine (Raw Sockets) erişim sağlar. Bu durum, bazı modern antivirüs motorlarının sezgisel analizlerinde tetiklenmelere yol açabilir.</p>
         
         <div class="table-wrapper">
             <table>
@@ -435,32 +367,32 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>VirusTotal Ratio</strong></td>
-                        <td style="color: var(--cyan); font-weight: 600;">3 / 72</td>
-                        <td><code style="color: var(--cyan);">FALSE POSITIVE VERIFIED</code></td>
+                        <td>VirusTotal Ratio</td>
+                        <td style="color: var(--cyan);">3 / 72</td>
+                        <td>FALSE POSITIVE VERIFIED</td>
                     </tr>
                     <tr>
-                        <td><strong>Elastic / SecureAge</strong></td>
+                        <td>Elastic / SecureAge</td>
                         <td style="color: var(--red);">Flagged</td>
-                        <td><code>Heuristic (Network Activity)</code></td>
+                        <td>Heuristic (Network Activity)</td>
                     </tr>
                     <tr>
-                        <td><strong>Kaspersky / Defender</strong></td>
-                        <td style="color: var(--green); font-weight: 600;">Clean</td>
-                        <td style="color: var(--green);">SECURE & OPERATIONAL</td>
+                        <td>Kaspersky / Defender</td>
+                        <td style="color: var(--green);">Clean</td>
+                        <td>SECURE & OPERATIONAL</td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
         <div class="alert-box">
-            <strong style="color: var(--red);">⚠️ TECHNICAL REQUIREMENT:</strong> Yazılımın alt ağ katmanlarındaki ağ paketlerini yakalaması ve port taraması gerçekleştirebilmesi için sistem üzerinde <strong>"Yönetici" (Administrator)</strong> yetkileriyle çalıştırılması zorunludur.
+            <span style="color: var(--red); font-weight: bold;">[!] TECHNICAL REQUIREMENT:</span> Yazılımın ağ paketlerini yakalaması ve port taraması gerçekleştirebilmesi için sistem üzerinde <strong>"Yönetici" (Administrator)</strong> yetkileriyle çalıştırılması zorunludur.
         </div>
     </section>
 
     <section id="modules">
         <h2>Core Operational Modules</h2>
-        <p>Eko-sistem içerisinde aktif olarak çalışan yüksek verimli modüllerin mimari dökümü:</p>
+        <p>Eko-sistem içerisinde aktif olarak çalışan yüksek verimli modüllerin teknik dökümü:</p>
         
         <div class="modules-grid">
             <div class="module-card">
@@ -469,7 +401,7 @@
                     <span class="module-id">01</span>
                 </div>
                 <div class="module-desc">High-speed multithreaded scan engine.</div>
-                <div class="module-cap">200+ Concurrent Threads & Service Det.</div>
+                <div class="module-cap">200+ Threads & Service Det.</div>
             </div>
 
             <div class="module-card">
@@ -477,7 +409,7 @@
                     <span class="module-name">Geo-IP & Whois</span>
                     <span class="module-id">02</span>
                 </div>
-                <div class="module-desc">Domain intelligence aggregation via secure APIs.</div>
+                <div class="module-desc">Domain intelligence via secure APIs.</div>
                 <div class="module-cap">Global ISP Database Mapping</div>
             </div>
 
@@ -495,7 +427,7 @@
                     <span class="module-name">System Metrics</span>
                     <span class="module-id">04</span>
                 </div>
-                <div class="module-desc">Real-time lightweight performance tracking.</div>
+                <div class="module-desc">Real-time performance tracking.</div>
                 <div class="module-cap">Per-second Resource Telemetry</div>
             </div>
 
@@ -504,8 +436,8 @@
                     <span class="module-name">DNS Enumeration</span>
                     <span class="module-id">05</span>
                 </div>
-                <div class="module-desc">Recursive zone and record discovery mapping.</div>
-                <div class="module-cap">A, MX, NS, TXT, SOA Mapping</div>
+                <div class="module-desc">Recursive zone and record discovery.</div>
+                <div class="module-cap">A, MX, NS, TXT Record Mapping</div>
             </div>
 
             <div class="module-card">
@@ -513,54 +445,31 @@
                     <span class="module-name">Subnet Calculator</span>
                     <span class="module-id">06</span>
                 </div>
-                <div class="module-desc">IPv4 CIDR computation and sub-architectures.</div>
-                <div class="module-cap">Logic-based Subnetting Analysis</div>
-            </div>
-
-            <div class="module-card">
-                <div class="module-header">
-                    <span class="module-name">Hash Tools</span>
-                    <span class="module-id">07</span>
-                </div>
-                <div class="module-desc">Forensic grade digital checksum generation.</div>
-                <div class="module-cap">MD5 & SHA-256 Native Integration</div>
-            </div>
-
-            <div class="module-card">
-                <div class="module-header">
-                    <span class="module-name">Network Speed</span>
-                    <span class="module-id">08</span>
-                </div>
-                <div class="module-desc">High-precision latency and jitter diagnosis.</div>
-                <div class="module-cap">Millisecond Stability Testing</div>
+                <div class="module-desc">IPv4 CIDR computation logic.</div>
+                <div class="module-cap">Subnetting & Range Analysis</div>
             </div>
         </div>
     </section>
 
     <section id="architecture">
-        <h2>Technical Architecture & Core Logic</h2>
-        <p>EmirNetwork, milisaniye hassasiyetinde stabilizasyon için katmanlı Core mimari kullanır:</p>
+        <h2>Technical Architecture & Roadmap</h2>
         <ul class="spec-list">
-            <li><strong>UI/UX Layer:</strong> <code>True RGB Rainbow Engine v2.0</code> — Konsol arabirimi üzerinde 24-bit dinamik renk derinliği görsel efektleri.</li>
-            <li><strong>Engine Layer:</strong> Python 3.13 optimize çekirdeği üzerinde asenkron ve <code>threading</code> mimarili multithreaded işlem yeteneği.</li>
-            <li><strong>Networking Layer:</strong> Düşük seviyeli <code>socket</code> yapılandırmaları ve harici şifreli istihbarat API akışları.</li>
+            <li><strong>UI/UX Layer:</strong> True RGB Rainbow Engine v2.0 — 24-bit renk derinliği.</li>
+            <li><strong>Engine Layer:</strong> Python 3.13 optimize çekirdeği ve <code>threading</code>.</li>
+            <li><strong>Networking Layer:</strong> Düşük seviyeli <code>socket</code> yapılandırmaları.</li>
         </ul>
-    </section>
 
-    <section id="roadmap">
-        <h2>Strategic Roadmap</h2>
+        <h2 style="border-left-color: var(--green);">Strategic Roadmap</h2>
         <ul class="spec-list roadmap-list">
-            <li class="done"><strong>Phase 1:</strong> Core Framework & RGB Engine Integration (Completed)</li>
+            <li class="done"><strong>Phase 1:</strong> Core Framework & RGB Engine Integration</li>
             <li class="todo"><strong>Phase 2:</strong> Advanced OSINT Module Expansion (v1.1)</li>
             <li class="todo"><strong>Phase 3:</strong> Web-based Remote Command Dashboard (v1.5)</li>
-            <li class="todo"><strong>Phase 4:</strong> AI-Powered Traffic Anomaly Detection (v2.0)</li>
         </ul>
     </section>
 
     <footer>
-        <div class="footer-name">MASTERMIND: EMIRLQQ1</div>
-        <div class="footer-meta">Verified via Sovereign Intelligence Network Platform // Official Product Certification</div>
-        <img class="footer-badge" src="https://img.shields.io/badge/AUTHENTICITY-GUARANTEED-00fbff?style=for-the-badge&logo=probot&logoColor=black" alt="Authenticity Guaranteed">
+        <div class="footer-name">MASTERMIND // EMIRLQQ1</div>
+        <div class="footer-meta">Verified via Sovereign Intelligence Network Platform</div>
     </footer>
 
 </div>
