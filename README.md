@@ -1,14 +1,18 @@
-# 👑 EMIRNETWORK: DEVELOPMENT TOOLKIT
-
-<p align="center">
-  <img src="https://img.shields.io/badge/VERIFIED_DEVELOPER-EMIRLQQ1-00fbff?style=flat-square&logo=github&logoColor=white" alt="Verified">
-  <img src="https://img.shields.io/badge/OFFICIAL_PRODUCT-EMIRNETWORK-00ff88?style=flat-square&logo=checkmarx&logoColor=white" alt="Official">
-  <img src="https://img.shields.io/badge/SECURITY_AUDIT-PASSED-gold?style=flat-square&logo=guardant&logoColor=white" alt="Audit">
-</p>
-
-### *Advanced Windows-Based Network Intelligence & Cyber Forensic Ecosystem*
-
----
+<h1 align="center">
+  <br>
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
+  <br>
+  <p align="center">
+    <img src="https://img.shields.io/badge/VERIFIED_DEVELOPER-EMIRLQQ1-00fbff?style=flat-square&logo=github&logoColor=white" alt="Verified">
+    <img src="https://img.shields.io/badge/OFFICIAL_PRODUCT-EMIRNETWORK-00ff88?style=flat-square&logo=checkmarx&logoColor=white" alt="Official">
+    <img src="https://img.shields.io/badge/SECURITY_AUDIT-PASSED-gold?style=flat-square&logo=guardant&logoColor=white" alt="Audit">
+  </p>
+  👑 EMIRNETWORK: DEVELOPMENT TOOLKIT 👑
+  <br>
+  <sub><i>Advanced Windows-Based Network Intelligence & Cyber Forensic Ecosystem</i></sub>
+  <br>
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
+</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/STATUS-OPERATIONAL-00fbff?style=for-the-badge&logo=statuspage&logoColor=black" alt="Status">
@@ -24,6 +28,15 @@
   <img src="https://img.shields.io/badge/LANGUAGE-PYTHON_3.13-3776ab?style=for-the-badge&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/AUTHENTICITY-GUARANTEED-white?style=for-the-badge&logo=comodo&logoColor=black" alt="Auth">
   <img src="https://img.shields.io/badge/LICENSE-MIT-red?style=for-the-badge&logo=pypy&logoColor=white" alt="License">
+</p>
+
+<p align="center">
+  <a href="#-executive-summary">Summary</a> •
+  <a href="#-deployment--security">Deployment</a> •
+  <a href="#-core-operational-modules">Core Modules</a> •
+  <a href="#-technical-architecture">Architecture</a> •
+  <a href="#-roadmap">Roadmap</a> •
+  <a href="#-certification">Certification</a>
 </p>
 
 ---
@@ -45,7 +58,7 @@ Optimize edilmiş, tek tıkla çalışan (portable) yürütülebilir dosyaya aş
 </p>
 
 ### 🛡️ VirusTotal & Heuristic Integrity Report
-Ağ diagnostik araçları, doğaları gereği düşük seviyeli ağ soketlerine (Raw Sockets) erişim sağlar. Bu durum, bazı modern antivirüs motorlarının analizlerinde "Heuristic Alert" vermesine neden olabilir.
+Ağ diagnostik araçları, doğaları gereği düşük seviyeli ağ soketlerine (Raw Sockets) erişim sağlar. Bu durum, bazı modern antivirüs motorlarının  analizlerinde "Heuristic Alert" vermesine neden olabilir.
 
 | Analysis Engine | Status | Security Verdict |
 | :--- | :--- | :--- |
@@ -95,6 +108,8 @@ Bu proje, **EmirNetwork Intelligence Group** (Lead Dev: EMIRLQQ1) tarafından te
 
 ---
 <p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="85%">
+  <br>
   <b>Mastermind: EMIRLQQ1</b><br>
   <i>Verified via Sovereign Intelligence Network Platform</i>
   <br><br>
