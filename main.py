@@ -1,8 +1,4 @@
-"""
-EMIRNETWORK — Elite Network Intelligence Platform
-True RGB rainbow engine, dollar-sign ASCII art, advanced OSINT modules.
-Windows UTF-8 compatible.
-"""
+
 
 import os, sys, math, socket, threading, time, json, struct, random, hashlib
 import concurrent.futures
@@ -28,9 +24,7 @@ try:
 except ImportError: HAS_SCAPY = False
 
 
-# ═══════════════════════════════════════════════════════════════
-#  TRUE RGB RAINBOW ENGINE
-# ═══════════════════════════════════════════════════════════════
+
 
 class RainbowEngine:
     """EMIRNETWORK Elite 24-bit RGB engine - Full Feature Edition."""
@@ -74,11 +68,8 @@ class RainbowEngine:
         return "\n".join(result)
 
 
-# ═══════════════════════════════════════════════════════════════
-#  DOLLAR-SIGN ASCII ART BANNER — "EMIRNETWORK"
-# ═══════════════════════════════════════════════════════════════
 
-# Bu banner, attığın görseldeki kalın blok fontuna göre uyarlandı.
+
 EMIRNETWORK_BANNER = [
     " ███████╗███╗   ███╗██╗██████╗ ███╗   ██╗███████╗████████╗██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗ ",
     " ██╔════╝████╗ ████║██║██╔══██╗████╗  ██║██╔════╝╚══██╔══╝██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝ ",
@@ -119,9 +110,6 @@ class RainbowBanner:
         print()
 
 
-# ═══════════════════════════════════════════════════════════════
-#  PORT SCANNER — HIGH-SPEED MULTITHREADED
-# ═══════════════════════════════════════════════════════════════
 
 COMMON_PORTS = {
     21: "FTP", 22: "SSH", 23: "Telnet", 25: "SMTP", 53: "DNS",
@@ -200,9 +188,6 @@ class PortScanner:
         return self.results, elapsed
 
 
-# ═══════════════════════════════════════════════════════════════
-#  GEO-IP & WHOIS MODULE
-# ═══════════════════════════════════════════════════════════════
 
 class GeoIPWhois:
     def __init__(self, target):
@@ -261,9 +246,7 @@ class GeoIPWhois:
                 print(engine.colorize(f"    {line}", start=80 + i * 3))
 
 
-# ═══════════════════════════════════════════════════════════════
-#  TRAFFIC SIMULATOR — SCAPY OR MOCK ENGINE
-# ═══════════════════════════════════════════════════════════════
+
 
 if HAS_SCAPY:
     class PacketBuilder:
@@ -346,9 +329,7 @@ class TrafficSimulator:
         print(engine.colorize(f"  [TRAFFIC] Simulation ended — {count} packets captured.", start=count * 4))
 
 
-# ═══════════════════════════════════════════════════════════════
-#  SYSTEM METRICS — REAL-TIME CPU / RAM BARS
-# ═══════════════════════════════════════════════════════════════
+
 
 class SystemMetrics:
     BAR_WIDTH = 40
@@ -406,9 +387,6 @@ class SystemMetrics:
         print()
 
 
-# ═══════════════════════════════════════════════════════════════
-#  DNS ENUMERATION MODULE
-# ═══════════════════════════════════════════════════════════════
 
 class DNSEnumerator:
     RECORD_TYPES = ["A", "AAAA", "MX", "NS", "TXT", "CNAME", "SOA"]
@@ -448,9 +426,6 @@ class DNSEnumerator:
         print()
 
 
-# ═══════════════════════════════════════════════════════════════
-#  SUBNET CALCULATOR
-# ═══════════════════════════════════════════════════════════════
 
 class SubnetCalculator:
     def __init__(self, cidr):
@@ -490,9 +465,6 @@ class SubnetCalculator:
         print()
 
 
-# ═══════════════════════════════════════════════════════════════
-#  HASH TOOLS
-# ═══════════════════════════════════════════════════════════════
 
 class HashTools:
     def __init__(self):
@@ -517,9 +489,7 @@ class HashTools:
         print()
 
 
-# ═══════════════════════════════════════════════════════════════
-#  NETWORK SPEED TEST
-# ═══════════════════════════════════════════════════════════════
+
 
 class SpeedTest:
     def __init__(self, host="8.8.8.8", port=53, count=10):
@@ -549,9 +519,6 @@ class SpeedTest:
         print()
 
 
-# ═══════════════════════════════════════════════════════════════
-#  MAIN MENU & APPLICATION LOOP
-# ═══════════════════════════════════════════════════════════════
 
 class EmirNetworkApp:
     MENU_ITEMS = [
@@ -677,9 +644,7 @@ class EmirNetworkApp:
                 time.sleep(1.5)
 
 
-# ═══════════════════════════════════════════════════════════════
-#  ENTRY POINT
-# ═══════════════════════════════════════════════════════════════
+
 
 if __name__ == "__main__":
     app = EmirNetworkApp()
