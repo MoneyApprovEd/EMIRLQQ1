@@ -1,9 +1,14 @@
+<div align="center">
+  <h1>⚡ EMIRNETWORK: DEVELOPMENT TOOLKIT</h1>
+  <p><sub><b>Advanced Windows-Based Network Intelligence & Cyber Forensic Ecosystem</b></sub></p>
 
-  👑 EMIRNETWORK: DEVELOPMENT TOOLKIT 👑
-  <br>
-  <sub><i>Advanced Windows-Based Network Intelligence & Cyber Forensic Ecosystem</i></sub>
-  <br>
+  <a href="#"><img src="https://img.shields.io/badge/Ecosystem-Forensic-00f3ff?style=for-the-badge" alt="Ecosystem"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Platform-Windows-0b0f19?style=for-the-badge&logo=windows" alt="Platform"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Intelligence-Advanced-orange?style=for-the-badge" alt="Intelligence"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Author-EMIRLQQ1-00f3ff?style=for-the-badge" alt="Author"></a>
+</div>
 
+---
 
 <p align="center">
   <img src="https://img.shields.io/badge/STATUS-OPERATIONAL-00fbff?style=for-the-badge&logo=statuspage&logoColor=black" alt="Status">
