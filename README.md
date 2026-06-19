@@ -1,18 +1,9 @@
-<h1 align="center">
-  <br>
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
-  <br>
-  <p align="center">
-    <img src="https://img.shields.io/badge/VERIFIED_DEVELOPER-EMIRLQQ1-00fbff?style=flat-square&logo=github&logoColor=white" alt="Verified">
-    <img src="https://img.shields.io/badge/OFFICIAL_PRODUCT-EMIRNETWORK-00ff88?style=flat-square&logo=checkmarx&logoColor=white" alt="Official">
-    <img src="https://img.shields.io/badge/SECURITY_AUDIT-PASSED-gold?style=flat-square&logo=guardant&logoColor=white" alt="Audit">
-  </p>
+
   👑 EMIRNETWORK: DEVELOPMENT TOOLKIT 👑
   <br>
   <sub><i>Advanced Windows-Based Network Intelligence & Cyber Forensic Ecosystem</i></sub>
   <br>
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
-</h1>
+
 
 <p align="center">
   <img src="https://img.shields.io/badge/STATUS-OPERATIONAL-00fbff?style=for-the-badge&logo=statuspage&logoColor=black" alt="Status">
