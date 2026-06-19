@@ -2,29 +2,6 @@
   <h1>⚡ EMIRNETWORK: DEVELOPMENT TOOLKIT</h1>
   <p><sub><b>Advanced Windows-Based Network Intelligence & Cyber Forensic Ecosystem</b></sub></p>
 
-  <a href="#"><img src="https://img.shields.io/badge/Ecosystem-Forensic-00f3ff?style=for-the-badge" alt="Ecosystem"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Platform-Windows-0b0f19?style=for-the-badge&logo=windows" alt="Platform"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Intelligence-Advanced-orange?style=for-the-badge" alt="Intelligence"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Author-EMIRLQQ1-00f3ff?style=for-the-badge" alt="Author"></a>
-</div>
-
----
-
-<p align="center">
-  <img src="https://img.shields.io/badge/STATUS-OPERATIONAL-00fbff?style=for-the-badge&logo=statuspage&logoColor=black" alt="Status">
-  <img src="https://img.shields.io/badge/SECURITY-FALSE_POSITIVE-00ff88?style=for-the-badge&logo=shield&logoColor=black" alt="Security">
-  <img src="https://img.shields.io/badge/VERSION-1.0.0_STABLE-gold?style=for-the-badge&logo=target&logoColor=black" alt="Version">
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/ARCH-X64_OPTIMIZED-ffd343?style=for-the-badge&logo=intel&logoColor=black" alt="Arch">
-  <img src="https://img.shields.io/badge/ENGINE-TRUE_RGB_V2-ff00ff?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Engine">
-  <img src="https://img.shields.io/badge/OS-WINDOWS_10/11-0078d4?style=for-the-badge&logo=windows&logoColor=white" alt="OS">
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/LANGUAGE-PYTHON_3.13-3776ab?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/AUTHENTICITY-GUARANTEED-white?style=for-the-badge&logo=comodo&logoColor=black" alt="Auth">
-  <img src="https://img.shields.io/badge/LICENSE-MIT-red?style=for-the-badge&logo=pypy&logoColor=white" alt="License">
-</p>
 
 <p align="center">
   <a href="#-executive-summary">Summary</a> •
